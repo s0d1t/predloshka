@@ -73,7 +73,7 @@ def get_admin_kb(user_id, message_id):
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
-    await message.answer("👋 **Приветствую!**\n\nПришлите текст, фото или стикер, и я анонимно отправлю их в канал после проверки модератором.")
+    await message.answer("👋 Приветствую!\n\nПришлите текст, фото или стикер, и я анонимно отправлю их в канал.")
 
 # Обработка причины отказа (только для админов в состоянии ожидания)
 @dp.message(AdminStates.waiting_for_reason)
