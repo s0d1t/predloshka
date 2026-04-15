@@ -37,7 +37,7 @@ def get_admin_kb(user_id, message_id):
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
     await message.answer(
-        "👋 Приветствую, пользователь!\n\n"
+        "👋 Приветствую, пользователь!👋\n\n"
         "📩 Для отправки анонимного сообщения введите текст, прикрепите фото или стикер:"
     )
 
