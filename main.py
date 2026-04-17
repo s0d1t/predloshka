@@ -7,7 +7,6 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-load_dotenv()  # <-- 2. ДОБАВИТЬ ЭТУ СТРОЧКУ (Обязательно до os.getenv)
 # --- КОНФИГУРАЦИЯ ЧЕРЕЗ ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ ---
 # Если переменная не найдена, будет использовано пустое значение или стандартное
 TOKEN = os.getenv("BOT_TOKEN")
